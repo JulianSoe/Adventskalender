@@ -1,0 +1,48 @@
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-image: url("/image/Winterlandscape.jpg");
+    background-size: cover;
+
+}
+
+.calendar-door {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin:1em
+}
+.calendar-door:hover{
+    border: solid antiquewhite 0.01em;
+}
+.calendar-door.future{
+    cursor: not-allowed;
+}
+
+.calendar-door.opened {
+    background-color: transparent;
+    opacity: 0;
+    /*animation: fade 3s forwards*/
+}
+   .messageContainer{
+       text-align: center;
+       animation: none;
+   }
+   .messageContainer.fade{
+       animation: fade 10s forwards;
+   }
+
+   @keyframes fade {
+       from {
+           opacity: 1;
+       }
+       to{
+           opacity: 0;
+       }
+   }

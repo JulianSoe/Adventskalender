@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const messageContainer = document.getElementById('messageContainer')
 
     for (let day = 1; day <= 24; day++) {
-        const openingDate = new Date(2023, 10, day)
+        const openingDate = new Date(2023, 11, day)
         const door = document.createElement('div');
         door.className = 'calendar-door';
         door.innerText = day;
